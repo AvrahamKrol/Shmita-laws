@@ -47,6 +47,11 @@ main {
   }
   .img {
     width: 120px;
+    transform: none;
+  }
+  .img:hover {
+    transform: none;
+    transition: none;
   }
   .footer {
     margin: 0 1rem;
