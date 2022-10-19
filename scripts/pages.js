@@ -1,5 +1,5 @@
 import { vegetables } from '../mock/vegetables.js';
-const main = document.getElementById('main');
+const wrapper = document.getElementById('wrapper');
 const btn = document.getElementById('btn');
 const sortedVegetables = vegetables.sort((a, b) =>
   a.name.localeCompare(b.name)
@@ -14,7 +14,7 @@ const temp = (item) => {
 };
 
 if (vegetables.length === 0) {
-  main.innerHTML = `
+  wrapper.innerHTML = `
   <p>Empty page</p>
   `;
 } else {
@@ -24,7 +24,7 @@ if (vegetables.length === 0) {
     })
     .join('');
   console.log(vegsHTML);
-  main.insertAdjacentHTML('beforeend', vegsHTML);
+  wrapper.insertAdjacentHTML('beforeend', vegsHTML);
 }
 
 btn.addEventListener('click', () => {
