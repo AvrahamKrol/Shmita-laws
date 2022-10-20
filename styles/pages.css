@@ -47,8 +47,57 @@ button {
 .foreword_text {
   margin-bottom: 10rem;
 }
+.foreword_text > p {
+  font-size: 2.2em;
+  margin-top: 2.5rem;
+  font-weight: bold;
+}
 .foreword_text > ul > li {
   font-size: 2.2em;
+}
+.modal {
+  font-size: 2.2rem;
+  color: #aaa;
+  cursor: pointer;
+}
+.separation_wrapper {
+  border: 3px solid #ccc;
+}
+.separation_container {
+  width: 90%;
+  margin: 3rem;
+}
+.separation_container > h2 {
+  font-size: 3.6rem;
+  margin-bottom: 3rem;
+}
+.separation_container > p {
+  font-size: 2rem;
+  line-height: 3.3rem;
+}
+.separation_container > p > a {
+  font-size: 2rem;
+  /* text-decoration: none; */
+  color: #000;
+}
+.separation_container > ol {
+  margin: 3rem;
+}
+.separation_container > ol > li {
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+.separation_container > ol > li > ul {
+  margin-left: 3rem;
+  list-style-type: disc;
+}
+.separation_container > ol > li > ul > li {
+  font-size: 2rem;
+  line-height: 3.3rem;
+}
+.separation_mark {
+  font-size: 2.6rem;
+  font-weight: bold;
 }
 .wrapper {
   width: 70%;

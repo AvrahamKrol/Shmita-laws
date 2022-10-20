@@ -1,8 +1,12 @@
-const veg = document.getElementById('veg');
-const fruit = document.getElementById('fruit');
-veg.addEventListener('click', () => {
-  window.location.href = 'vegetables.html';
+const veg = document.getElementById('vegetables');
+const fruit = document.getElementById('fruits');
+veg.addEventListener('click', (event) => {
+  console.log(event.target.id);
+  localStorage.setItem('produce', event.target.id);
+  window.location.href = 'produce_zmanim.html';
 });
-fruit.addEventListener('click', () => {
-  window.location.href = 'fruits.html';
+fruit.addEventListener('click', (event) => {
+  console.log(event.target.id);
+  localStorage.setItem('produce', event.target.id);
+  window.location.href = 'produce_zmanim.html';
 });
