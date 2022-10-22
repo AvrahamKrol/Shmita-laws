@@ -4,10 +4,11 @@ const choice = localStorage.getItem('produce');
 const wrapper = document.getElementById('wrapper');
 const btn = document.getElementById('btn');
 const modalBtn = document.getElementById('modal');
-const modal = document.getElementById('separation_modal');
 const sortedVegetables = vegetables.sort((a, b) =>
   a.name.localeCompare(b.name)
 );
+const sortedFruits = fruits.sort((a, b) => a.name.localeCompare(b.name));
+const modal = document.getElementById('separation_modal');
 const temp = (item) => {
   return `
     <div class="container">
@@ -16,19 +17,27 @@ const temp = (item) => {
   `;
 };
 
-if (choice === 'vegetables') {
-  if (vegetables.length === 0) {
+const produceHtml = (produce, sortedProduce) => {
+  if (produce.length === 0) {
     wrapper.innerHTML = `
     <p>Empty page</p>
     `;
   } else {
-    const vegsHTML = sortedVegetables
+    const vegsHTML = sortedProduce
       .map((item) => {
         return temp(item);
       })
       .join('');
     wrapper.insertAdjacentHTML('beforeend', vegsHTML);
   }
+};
+
+if (choice === 'vegetables') {
+  produceHtml(vegetables, sortedVegetables);
+}
+
+if (choice === 'fruits') {
+  produceHtml(fruits, sortedFruits);
 }
 
 btn.addEventListener('click', () => {
