@@ -124,6 +124,9 @@ button {
 }
 
 @media screen and (max-width: 720px) {
+  .modal {
+    font-size: 2rem;
+  }
   .foreword_title {
     font-size: 2.6rem;
   }
@@ -133,12 +136,54 @@ button {
   .foreword_text > ul > li {
     font-size: 1.8rem;
   }
+  .foreword_text > p {
+    font-size: 2rem;
+  }
+  .separation_container {
+    width: 90%;
+    margin: 2.6rem;
+  }
+  .separation_container > h2 {
+    font-size: 3.2rem;
+    margin-bottom: 2.6rem;
+  }
+  .separation_container > p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+  .separation_container > p > a {
+    font-size: 1.8rem;
+    /* text-decoration: none; */
+    color: #000;
+  }
+  .separation_container > ol {
+    margin: 2.6rem;
+  }
+  .separation_container > ol > li {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+  .separation_container > ol > li > ul {
+    margin-left: 2.6rem;
+    list-style-type: disc;
+  }
+  .separation_container > ol > li > ul > li {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+  .separation_mark {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
   .veg_items {
     font-size: 1.8rem;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .modal {
+    font-size: 1.2rem;
+  }
   .foreword_title {
     font-size: 2rem;
   }
@@ -147,6 +192,45 @@ button {
   }
   .foreword_text > ul > li {
     font-size: 1.2rem;
+  }
+  .foreword_text > p {
+    font-size: 1.2rem;
+  }
+  .separation_container {
+    width: 90%;
+    margin: 2.4rem;
+  }
+  .separation_container > h2 {
+    font-size: 3rem;
+    margin-bottom: 2.2rem;
+  }
+  .separation_container > p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+  .separation_container > p > a {
+    font-size: 1.6rem;
+    /* text-decoration: none; */
+    color: #000;
+  }
+  .separation_container > ol {
+    margin: 2.4rem;
+  }
+  .separation_container > ol > li {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .separation_container > ol > li > ul {
+    margin-left: 2.4rem;
+    list-style-type: disc;
+  }
+  .separation_container > ol > li > ul > li {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .separation_mark {
+    font-size: 1.4rem;
+    font-weight: bold;
   }
   .veg_items {
     font-size: 1.2rem;
